@@ -1,0 +1,24 @@
+html{
+	font-size: 62.5%;
+
+}
+
+	body{
+		color:$secondaryColor;
+		background-color: $mainColor;
+		}
+
+		h1{
+		margin: 50px 515px;
+		padding: 0 200px;
+		font-family: $mainFont;
+		font-size: $textLg;
+		}
+			h2 a{
+				margin:50px 515px;
+				padding:0 200px;
+				font-family: $mainFont;
+				font-size: $textMd;
+				text-decoration: none;
+				list-style: none;
+			}

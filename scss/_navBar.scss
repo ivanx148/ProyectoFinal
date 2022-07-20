@@ -1,0 +1,45 @@
+nav{
+	font-family: $mainFont;
+	font-size: $textMd;
+	background-color:map-get($map:$colores, $key:"tres");
+	a{
+		margin: 0px 110px;
+			list-style: none;
+			text-decoration: none;
+			ul{
+				display: inline-block;
+				li{
+					list-style: none;
+					display: inline-block;
+					margin:10px 6px;
+					font-family: $mainFont;
+					color: $secondaryColor;
+					font-size:$textMd;
+					a{
+						&:hover{
+							color: map-get($map:$colores, $key:"tres");
+					}
+				}
+			}
+
+		}
+	}
+}
+.banner {
+    background:linear-gradient(to bottom,whitesmoke,grey,black);
+    color: $secondaryColor;
+    padding-bottom: auto;
+}
+
+.pegassi{
+	margin-left: 10px;
+	width: 5vw;
+}
+
+
+
+
+
+
+
+

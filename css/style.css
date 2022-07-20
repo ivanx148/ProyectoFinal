@@ -1,0 +1,358 @@
+/*---------Variables globales-----------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito+Sans:wght@200&display=swap");
+/*----------Maps-----------*/
+/*---------Mixins----------*/
+/*---------- SELECTORES---------- */
+#selectores h1.one:first-letter {
+  color: #A80000FF;
+  font-size: 5.5rem;
+  font-weight: 500; }
+
+#selectores p.two:first-letter {
+  color: #1606ED;
+  font-size: 2rem; }
+
+#selectores p.tres:first-letter {
+  color: white;
+  font-size: 2rem; }
+
+#selectores p.cuatro:first-letter {
+  color: #A80000FF;
+  font-size: 3rem; }
+
+/*-------------ANIMACIONES-------------*/
+.autos:hover {
+  transform: scale(1.2); }
+
+.transform {
+  cursor: pointer; }
+  .transform:hover {
+    transform: translate(10px, -20px);
+    transition: transform 1s; }
+
+/*-----------INDEX----------------*/
+.text-back {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #808080;
+  color: white; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: white;
+  background-color: black; }
+
+h1 {
+  margin: 50px 515px;
+  padding: 0 200px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.8rem; }
+
+h2 a {
+  margin: 50px 515px;
+  padding: 0 200px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none; }
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  background-color: #A80000FF; }
+  nav a {
+    margin: 0px 110px;
+    list-style: none;
+    text-decoration: none; }
+    nav a ul {
+      display: inline-block; }
+      nav a ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px 6px;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 2rem; }
+        nav a ul li a:hover {
+          color: #A80000FF; }
+
+.banner {
+  background: linear-gradient(to bottom, whitesmoke, grey, black);
+  color: white;
+  padding-bottom: auto; }
+
+.pegassi {
+  margin-left: 10px;
+  width: 5vw; }
+
+.text-titulo {
+  text-align: center;
+  font-size: 4.7rem;
+  margin-top: 15px;
+  margin-bottom: 40px; }
+  @media (max-width: 440px) {
+    .text-titulo {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif; } }
+
+.text-back {
+  text-decoration: none;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #808080;
+  color: white; }
+  @media (max-width: 440px) {
+    .text-back {
+      text-decoration: none;
+      text-align: center;
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      background-color: #808080;
+      color: #F5F0F0; } }
+
+.resaltar {
+  cursor: pointer; }
+  .resaltar:hover {
+    color: #A80000FF;
+    transform: scale(1.2); }
+
+/*---------- TUATARA ---------- */
+.text-pregunta {
+  text-align: center;
+  font-size: 3rem;
+  padding: -15px;
+  margin-top: 50px; }
+  @media (max-width: 440px) {
+    .text-pregunta {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300; } }
+
+/*---------- NUESTROS VEHICULOS ---------- */
+.titulo-depor {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #F5F0F0;
+  background-color: #808080;
+  margin-top: 15px; }
+  @media (max-width: 440px) {
+    .titulo-depor {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.contenedor-a, .contenedor-b {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; }
+  @media (max-width: 440px) {
+    .contenedor-a, .contenedor-b {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.contenedor-b {
+  flex-direction: row; }
+  @media (max-width: 440px) {
+    .contenedor-b {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.texto-a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: white;
+  text-align: center;
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  margin: 10px; }
+  @media (max-width: 440px) {
+    .texto-a {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.texto-espe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 440px) {
+    .texto-espe {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.texto-ima, .texto-image {
+  width: 40%;
+  height: 40%;
+  margin-left: 50px; }
+  @media (max-width: 440px) {
+    .texto-ima, .texto-image {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.texto-image {
+  margin-right: 50px; }
+  @media (max-width: 440px) {
+    .texto-image {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.resaltado, .suvs {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 400;
+  color: #F5F0F0;
+  background-color: #A80000FF; }
+  @media (max-width: 440px) {
+    .resaltado, .suvs {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.suvs {
+  background-color: #1606ED; }
+  @media (max-width: 440px) {
+    .suvs {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+/*-------------- CONTACTO -------------- */
+.forms {
+  width: 90vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 300; }
+
+.pregunta {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  border-top-color: #F5F0F0;
+  border-top: solid;
+  padding: 50px; }
+
+.text-main {
+  border-top: dashed;
+  border-top-color: #F5F0F0;
+  border-top-width: 2px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  border-top-color: #F5F0F0; }
+
+.text-map {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 30px; }
+
+/*---------- FOOTER ---------- */
+footer a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none; }
+  footer a p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    list-style: none; }
+
+.footer {
+  display: flex; }
+
+.text-center {
+  border-top-color: white;
+  border-top: solid;
+  justify-content: space-between;
+  display: flex;
+  padding: 50px; }
+
+.redes-sociales {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 10px; }
+
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem; }
+
+@media (max-width: 440px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300; } }

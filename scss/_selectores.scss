@@ -1,0 +1,49 @@
+/*---------- SELECTORES---------- */
+
+#selectores h1.one:first-letter{
+    color: map-get($map:$colores, $key:"tres");
+    font-size: $textXxl;
+    font-weight: $bold;
+}
+
+
+
+#selectores p.two:first-letter{
+    color: map-get($map:$colores,$key:"cinco");
+    font-size: $textMd;
+}
+
+#selectores p.tres:first-letter{
+    color: $secondaryColor;
+    font-size: $textMd;
+}
+
+#selectores p.cuatro:first-letter{
+    color: map-get($map:$colores, $key:"tres");
+    font-size: $textMdl;
+}
+
+/*-------------ANIMACIONES-------------*/
+.autos{
+    &:hover{ 
+    transform: scale(1.2);
+            }
+}
+.transform{
+        cursor: pointer;
+        &:hover{
+    transform: translate(10px, -20px);
+    transition: transform 1s;
+}
+}
+
+
+/*-----------INDEX----------------*/
+
+.text-back{
+    text-decoration:none;
+    text-align: center;
+    font-size: $textSm; 
+    background-color:map-get($map:$colores, $key:"cuatro");
+    color: $secondaryColor;
+}

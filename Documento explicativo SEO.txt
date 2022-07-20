@@ -1,0 +1,23 @@
+﻿En el archivo index.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Vehiculos Deportivos y SUVs premium, diseñados con la última tecnología a nivel mundial, para obtener el mayor confort y rendimiento posible, superando todos los límites.”
+Palabras Clave: "Pegassi,Beyond the Limits, Tuatara."
+
+
+En el archivo tuatara.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Pegassi Tuatara, el vehículo deportivo más rápido sobre la faz de la Tierra."
+Palabras Clave: "Pegassi,Tuatara,Beyond Imagination."
+
+
+En el archivo nuestros-vehiculos.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Lista de Deportivos y SUVs de Pegassi, la colección más selecta y exclusiva de vehículos premium."
+Palabras Clave: "Pegassi,Deportivos,SUVs,W11,Stradale,Tempesta,Urus,Streiter,GLB."
+
+
+En el archivo servicios-al-cliente.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Servicios al cliente que brindamos desde Pegassi, Garantías, Servicios postventa, Seguridad y Confiabilidad "
+Palabras Clave: "Pegassi,postventa,Garantía,Seguridad,Confiabilidad."
+
+
+En el archivo contacto.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Medios de contacto y ubicación de nuestro concesionario oficial."
+Palabras Clave: "Preguntas, dudas, mapa, concesionario,formulario."

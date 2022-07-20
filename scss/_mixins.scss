@@ -1,0 +1,35 @@
+/*----------Maps-----------*/
+
+$colores:(	
+	"uno":#F5F0F0,
+	"dos":#0F0E0E,
+	"tres":#A80000FF,
+	"cuatro":#808080,
+	"cinco":#1606ED,
+	);
+
+/*---------Mixins----------*/
+
+
+@mixin texto ($weight,$interlineado,$color){
+	font-family: $mainFont;
+	font-weight: $weight;
+	line-height: $interlineado;
+	color: $color;
+	text-align: center;
+	width: 60%;
+	height: auto;
+	padding:10px;
+	margin: 10px;
+	
+}
+
+
+@mixin flex-column(){
+	display:flex ;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	
+}
+

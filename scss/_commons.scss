@@ -1,0 +1,257 @@
+.text-titulo{
+	text-align: center;
+	font-size: $textXl;
+	margin-top: 15px;
+	margin-bottom: 40px;
+	@media (max-width: 440px){
+		text-align: center;
+		font-size: $textSm;
+		font-family: $mainFont;
+	}	
+		
+
+}
+
+
+.text-back{
+	text-decoration:none;
+	text-align: center;
+	font-size: $textMdl; 
+	background-color: map-get($map:$colores, $key:"cuatro");
+	color: $secondaryColor;
+	@media (max-width: 440px){
+		text-decoration: none;
+		text-align: center;
+		font-size: $textSsm;
+		font-family: $mainFont;
+		font-weight: $light;
+		background-color:map-get($map:$colores,$key:"cuatro");
+		color: map-get($map:$colores,$key:"uno");
+	}	
+}
+
+.resaltar{
+	cursor: pointer;
+	&:hover{
+		color: map-get($map:$colores, $key:"tres");
+		transform: scale(1.2);
+	}
+}
+
+/*---------- TUATARA ---------- */
+
+.text-pregunta{
+	text-align: center;
+	font-size: $textMdl;
+	padding: -15px;
+	margin-top: 50px;
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+	}
+}
+
+/*---------- NUESTROS VEHICULOS ---------- */
+
+.titulo-depor{
+	text-align: center;
+	font-size: $textMdl;
+	font-family: $mainFont;
+	font-weight: $bold;
+	color: map-get($map:$colores,$key:"uno");
+	background-color:map-get($map:$colores, $key:"cuatro");
+	margin-top: 15px;
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+}
+
+
+
+.contenedor-a{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	text-align: center;
+	font-size: $textSm;
+	font-family: $mainFont;
+	font-weight: $light;
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+}
+
+.contenedor-b{
+	@extend .contenedor-a;
+	flex-direction: row;
+		@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	
+}
+
+.texto-a{
+	@include texto($light,1.4em,$secondaryColor);
+		@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+}
+
+
+.texto-espe{
+	@include flex-column();
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+.texto-ima{
+	width: 40%;
+	height: 40%;
+	margin-left: 50px;
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+}
+
+
+.texto-image{
+	@extend .texto-ima;
+	margin-right: 50px;
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+}
+
+.resaltado{
+	text-decoration: none;
+	text-align: center;
+	font-family: $mainFont;
+	font-size: $textLg;
+	font-weight: $regular;
+	color: map-get($map:$colores, $key:"uno");
+	background-color: map-get($map:$colores,$key:"tres");
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+}
+
+.suvs{
+	@extend .resaltado;
+	background-color:map-get($map:$colores,$key:"cinco");
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+
+
+
+/*-------------- CONTACTO -------------- */
+
+.forms{
+	width:90vw;
+	font-family: $mainFont;
+	font-size: $textMd;
+	font-weight: $light;
+
+}
+
+.pregunta{
+	display: flex;
+	justify-content: space-evenly;
+	font-family: $mainFont;
+	font-size: $textMdl;
+	font-weight: $regular;
+	border-top-color:map-get($map:$colores,$key:"uno");
+	border-top:solid;
+	padding: 50px;
+
+}
+
+.text-main {
+  border-top: dashed;
+  border-top-color: #F5F0F0;
+  border-top-width: 2px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: $secondaryFont;
+  font-size: $textMdl;
+  font-weight: $regular;
+  border-top-color:map-get($map:$colores,$key:"uno");
+}
+
+.text-map {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 30px; 
+}
