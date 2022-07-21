@@ -5,18 +5,18 @@
 	margin-bottom: 40px;
 	@media (max-width: 440px){
 		text-align: center;
-		font-size: $textSm;
+		font-size: $textMdl;
 		font-family: $mainFont;
+		font-weight: $regular;
 	}	
-		
-
 }
-
 
 .text-back{
 	text-decoration:none;
 	text-align: center;
-	font-size: $textMdl; 
+	font-size: $textMd; 
+	font-family:$mainFont;
+	font-weight: $bold;
 	background-color: map-get($map:$colores, $key:"cuatro");
 	color: $secondaryColor;
 	@media (max-width: 440px){
@@ -46,11 +46,99 @@
 	padding: -15px;
 	margin-top: 50px;
 	@media (max-width: 440px){
-		font-size: $textSm;
+		font-size: $textMd;
 		font-family: $mainFont;
 		font-weight: $light;
 	}
 }
+
+.text-tuata{
+	text-decoration:none;
+	text-align: center;
+	font-family: $secondaryFont;
+	font-size: $textMdl;
+	font-weight: $regular; 
+	color: $secondaryColor;
+	margin: 25px;
+	@media (max-width: 440px){
+		text-decoration: none;
+		text-align: center;
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+	}	
+}
+
+.text-especi{
+	text-align: center;
+	font-family: $mainFont;
+	font-size: $textMdl;
+	font-weight: $bold;
+	color: $mainColor;
+	background-color:map-get($map:$colores, $key:"cuatro");
+	margin-top: 20px;
+	@media (max-width: 440px){
+		font-size: $textMd;
+		font-family: $mainFont;
+		font-weight: $bold;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+
+}
+
+.parrafo-especi{
+	text-align: center;
+	font-family: $mainFont;
+	font-size: $textMd;
+	font-weight: $regular;
+	color:map-get($map:$colores,$key:"uno");
+	margin-top: 20px;
+	@media (max-width: 440px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $light;
+		margin: 10px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.btn-mas{
+	font-family: $mainFont;
+	font-size: $textSm;
+	font-weight: $bold;
+	font-style: $mainStyle;
+	line-height:$standard;
+	color:map-get($map:$colores,$key:"uno");
+	background-color:map-get($map:$colores,$key:"tres");
+}
+.btn-mas1{
+	@extend .btn-mas;
+	color:map-get($map:$colores,$key:"tres");
+	background-color:map-get($map:$colores,$key:"uno");
+
+}
+
+.imagen-center{
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.bg-osc{
+	background-color: $mainColor;
+
+}
+
 
 /*---------- NUESTROS VEHICULOS ---------- */
 
@@ -63,7 +151,7 @@
 	background-color:map-get($map:$colores, $key:"cuatro");
 	margin-top: 15px;
 	@media (max-width: 440px){
-		font-size: $textSm;
+		font-size: $textMd;
 		font-family: $mainFont;
 		font-weight: $light;
 		text-align: center;
@@ -73,8 +161,6 @@
 	align-items: center;
 	}
 }
-
-
 
 .contenedor-a{
 	display: flex;
@@ -94,7 +180,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 }
 
 .contenedor-b{
@@ -128,7 +213,6 @@
 
 }
 
-
 .texto-espe{
 	@include flex-column();
 	@media (max-width: 440px){
@@ -144,9 +228,6 @@
 }
 
 .texto-ima{
-	width: 40%;
-	height: 40%;
-	margin-left: 50px;
 	@media (max-width: 440px){
 		font-size: $textSm;
 		font-family: $mainFont;
@@ -163,7 +244,6 @@
 
 .texto-image{
 	@extend .texto-ima;
-	margin-right: 50px;
 	@media (max-width: 440px){
 		font-size: $textSm;
 		font-family: $mainFont;
@@ -186,7 +266,7 @@
 	color: map-get($map:$colores, $key:"uno");
 	background-color: map-get($map:$colores,$key:"tres");
 	@media (max-width: 440px){
-		font-size: $textSm;
+		font-size: $textMdl;
 		font-family: $mainFont;
 		font-weight: $light;
 		text-align: center;
@@ -212,8 +292,82 @@
 	align-items: center;
 }
 }
+.tecnicas{
+	text-align: center;
+	font-family: $mainFont;
+	font-size: $textMd;
+	font-weight: $bold;
+	color: map-get($map:$colores, $key:"uno");
+	margin-top: 10px;
+	margin-bottom: 10px;
+	@media (max-width: 440px){
+		font-size: $textMd;
+		font-family: $mainFont;
+		font-weight: $bold;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+/*-------------- SERVICIOS AL CLIENTE -------------- */
+
+.titulo-ser{
+	font-family: $mainFont ;
+	font-size: $textMdl;
+	font-weight: $bold;
+	background-color:map-get($map:$colores,$key:"seis");
+	color:map-get($map:$colores,$key:"dos");
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items:center;
+	@media (max-width: 440px){
+		font-size: $textMd;
+		font-family: $secondaryFont;
+		font-weight: $regular;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+.titulo-tua{
+	@extend .titulo-ser;
+	color:$keyColor;
+	background-color:map-get($map:$colores,$key:"tres");
+
+}
+
+.titulo-tuataras{
+	@extend .titulo-ser;
+	color:map-get($map:$colores,$key:"tres") ;
+	background-color:map-get($map:$colores,$key:"uno");
+
+}
+
+.texto-ser{
+		font-family: $secondaryFont;
+		font-size: $textMd;
+		font-weight: $regular;
+		color:map-get($map:$colores,$key:"uno") ;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		margin-top: 10px;
+}
 
 
+
+.btn-more{
+	@extend .btn-mas;
+	background-color:map-get($map:$colores,$key:"seis");
+	color:map-get($map:$colores,$key:"dos");
+}
 
 
 /*-------------- CONTACTO -------------- */

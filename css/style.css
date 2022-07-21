@@ -7,9 +7,12 @@
   color: #A80000FF;
   font-size: 5.5rem;
   font-weight: 500; }
+  @media (max-width: 440px) {
+    #selectores h1.one:first-letter {
+      font-size: 3rem; } }
 
 #selectores p.two:first-letter {
-  color: #1606ED;
+  color: #A80000FF;
   font-size: 2rem; }
 
 #selectores p.tres:first-letter {
@@ -22,13 +25,21 @@
 
 /*-------------ANIMACIONES-------------*/
 .autos:hover {
-  transform: scale(1.2); }
+  transform: scale(1.1); }
 
-.transform {
-  cursor: pointer; }
-  .transform:hover {
-    transform: translate(10px, -20px);
-    transition: transform 1s; }
+.transform:hover {
+  transform: translate(-1px, -20px);
+  transition: transform 2s; }
+
+.autos1:hover {
+  transform: scale(1.1);
+  transition: transform 2s; }
+
+.transformacion:hover {
+  transform: scale(1.4);
+  transform: translate(40px, 2px);
+  cursor: pointer;
+  transition: transform 1s; }
 
 /*-----------INDEX----------------*/
 .text-back {
@@ -62,7 +73,7 @@ h2 a {
 nav {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  background-color: #A80000FF; }
+  font-weight: 500; }
   nav a {
     margin: 0px 110px;
     list-style: none;
@@ -87,6 +98,11 @@ nav {
 .pegassi {
   margin-left: 10px;
   width: 5vw; }
+  @media (max-width: 440px) {
+    .pegassi {
+      display: flex;
+      justify-content: flex-start;
+      width: 7vw; } }
 
 .text-titulo {
   text-align: center;
@@ -96,13 +112,16 @@ nav {
   @media (max-width: 440px) {
     .text-titulo {
       text-align: center;
-      font-size: 1.5rem;
-      font-family: "Montserrat", sans-serif; } }
+      font-size: 3rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400; } }
 
 .text-back {
   text-decoration: none;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   background-color: #808080;
   color: white; }
   @media (max-width: 440px) {
@@ -129,9 +148,85 @@ nav {
   margin-top: 50px; }
   @media (max-width: 440px) {
     .text-pregunta {
+      font-size: 2rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300; } }
+
+.text-tuata {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  margin: 25px; }
+  @media (max-width: 440px) {
+    .text-tuata {
+      text-decoration: none;
+      text-align: center;
       font-size: 1.5rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 300; } }
+
+.text-especi {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: black;
+  background-color: #808080;
+  margin-top: 20px; }
+  @media (max-width: 440px) {
+    .text-especi {
+      font-size: 2rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.parrafo-especi {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #F5F0F0;
+  margin-top: 20px; }
+  @media (max-width: 440px) {
+    .parrafo-especi {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      margin: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.btn-mas, .btn-mas1, .btn-more {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 2em;
+  color: #F5F0F0;
+  background-color: #A80000FF; }
+
+.btn-mas1 {
+  color: #A80000FF;
+  background-color: #F5F0F0; }
+
+.imagen-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.bg-osc {
+  background-color: black; }
 
 /*---------- NUESTROS VEHICULOS ---------- */
 .titulo-depor {
@@ -144,7 +239,7 @@ nav {
   margin-top: 15px; }
   @media (max-width: 440px) {
     .titulo-depor {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 300;
       text-align: center;
@@ -194,7 +289,7 @@ nav {
   width: 60%;
   height: auto;
   padding: 10px;
-  margin: 10px; }
+  margin-top: 10px; }
   @media (max-width: 440px) {
     .texto-a {
       font-size: 1.5rem;
@@ -222,33 +317,27 @@ nav {
       justify-content: center;
       align-items: center; } }
 
-.texto-ima, .texto-image {
-  width: 40%;
-  height: 40%;
-  margin-left: 50px; }
-  @media (max-width: 440px) {
-    .texto-ima, .texto-image {
-      font-size: 1.5rem;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 300;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; } }
+@media (max-width: 440px) {
+  .texto-ima, .texto-image {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
-.texto-image {
-  margin-right: 50px; }
-  @media (max-width: 440px) {
-    .texto-image {
-      font-size: 1.5rem;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 300;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; } }
+@media (max-width: 440px) {
+  .texto-image {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 .resaltado, .suvs {
   text-decoration: none;
@@ -260,7 +349,7 @@ nav {
   background-color: #A80000FF; }
   @media (max-width: 440px) {
     .resaltado, .suvs {
-      font-size: 1.5rem;
+      font-size: 3rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 300;
       text-align: center;
@@ -281,6 +370,69 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
+
+.tecnicas {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #F5F0F0;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  @media (max-width: 440px) {
+    .tecnicas {
+      font-size: 2rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+/*-------------- SERVICIOS AL CLIENTE -------------- */
+.titulo-ser, .titulo-tua, .titulo-tuataras {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  background-color: #00D7FE;
+  color: #0F0E0E;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 440px) {
+    .titulo-ser, .titulo-tua, .titulo-tuataras {
+      font-size: 2rem;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.titulo-tua {
+  color: whitesmoke;
+  background-color: #A80000FF; }
+
+.titulo-tuataras {
+  color: #A80000FF;
+  background-color: #F5F0F0; }
+
+.texto-ser {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #F5F0F0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px; }
+
+.btn-more {
+  background-color: #00D7FE;
+  color: #0F0E0E; }
 
 /*-------------- CONTACTO -------------- */
 .forms {
@@ -336,6 +488,12 @@ footer a {
   justify-content: space-between;
   display: flex;
   padding: 50px; }
+  @media (max-width: 440px) {
+    .text-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .redes-sociales {
   display: flex;
@@ -345,8 +503,20 @@ footer a {
 .copyright {
   display: flex;
   justify-content: flex-start;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem; }
+  @media (max-width: 440px) {
+    .copyright {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 300; } }
+
+.class {
+  width: 2vw; }
 
 @media (max-width: 440px) {
   .footer {

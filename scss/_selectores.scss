@@ -4,12 +4,16 @@
     color: map-get($map:$colores, $key:"tres");
     font-size: $textXxl;
     font-weight: $bold;
+    @media (max-width: 440px){
+    font-size: $textMdl;
+    
+}
 }
 
 
 
 #selectores p.two:first-letter{
-    color: map-get($map:$colores,$key:"cinco");
+    color: map-get($map:$colores,$key:"tres");
     font-size: $textMd;
 }
 
@@ -25,17 +29,33 @@
 
 /*-------------ANIMACIONES-------------*/
 .autos{
-    &:hover{ 
-    transform: scale(1.2);
-            }
+    &:hover{
+        transform: scale(1.1);
+  
+  }   
 }
 .transform{
-        cursor: pointer;
         &:hover{
-    transform: translate(10px, -20px);
-    transition: transform 1s;
+    transform: translate(-1px, -20px);
+    transition: transform 2s
 }
 }
+
+.autos1:hover {
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+
+.transformacion{
+    &:hover{
+        transform: scale(1.4);
+        transform: translate(40px,2px);
+        cursor: pointer;
+        transition: transform 1s;
+
+}
+}
+
 
 
 /*-----------INDEX----------------*/

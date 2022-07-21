@@ -1,7 +1,8 @@
 nav{
 	font-family: $mainFont;
 	font-size: $textMd;
-	background-color:map-get($map:$colores, $key:"tres");
+	font-weight: $bold;
+	
 	a{
 		margin: 0px 110px;
 			list-style: none;
@@ -34,6 +35,12 @@ nav{
 .pegassi{
 	margin-left: 10px;
 	width: 5vw;
+	@media (max-width: 440px){
+	display: flex;
+	justify-content:flex-start;
+	width: 7vw;
+	
+}
 }
 
 

@@ -28,18 +28,41 @@ footer{
 	justify-content: space-between;
 	display: flex;
 	padding: 50px;
+	@media (max-width: 440px){
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 }
 .redes-sociales{
 	display: flex;
 	justify-content:flex-end;
 	padding: 0px 10px;
+
 }
 .copyright{
 	display: flex;
 	justify-content: flex-start;
-	font-family: $mainFont;
+	font-family: $secondaryFont;
 	font-size: $textSm;
+	@media (max-width: 440px){
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: $secondaryFont;
+	font-size: $textSsm;
+	font-weight: $light;
 }
+}
+
+.class{
+	width: 2vw;
+	
+}
+
 @media (max-width: 440px){
 .footer{
 	display: flex;
