@@ -59,8 +59,10 @@ footer{
 }
 
 .class{
-	width: 2vw;
-	
+	width: 2vw;	
+	@media (max-width: 440px){
+	width: 6.8vw;
+}	
 }
 
 @media (max-width: 440px){
@@ -69,7 +71,7 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: $textSsm;
+	font-size: $textSm;
 	font-weight: $light;
 }
 }

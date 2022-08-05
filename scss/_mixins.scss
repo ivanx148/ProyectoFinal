@@ -5,7 +5,7 @@ $colores:(
 	"dos":#0F0E0E,
 	"tres":#A80000FF,
 	"cuatro":#808080,
-	"cinco":#1606ED,
+	"cinco":#1606ED, 
 	"seis":#00D7FE,
 	"siete":#FF0000,
 	);
@@ -28,6 +28,7 @@ $colores:(
 
 
 @mixin flex-column(){
+	margin-top: 10px;
 	display:flex ;
 	flex-direction: column;
 	justify-content: center;

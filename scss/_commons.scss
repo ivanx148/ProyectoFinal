@@ -131,6 +131,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 13px;
+	margin-bottom: 13px;
+
 }
 
 
@@ -228,7 +231,9 @@
 }
 
 .texto-ima{
+	width: 40vw;
 	@media (max-width: 440px){
+		width: 90vw;
 		font-size: $textSm;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -258,6 +263,7 @@
 }
 
 .resaltado{
+	margin-top: 10px;
 	text-decoration: none;
 	text-align: center;
 	font-family: $mainFont;
@@ -318,16 +324,17 @@
 	font-family: $mainFont ;
 	font-size: $textMdl;
 	font-weight: $bold;
-	background-color:map-get($map:$colores,$key:"seis");
+	background:linear-gradient(to bottom,#A80000FF,#F5F0F0);
 	color:map-get($map:$colores,$key:"dos");
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	align-items:center;
+	margin-top: 15px;
 	@media (max-width: 440px){
 		font-size: $textMd;
-		font-family: $secondaryFont;
-		font-weight: $regular;
+		font-family: $mainFont;
+		font-weight: $bold;
 		text-align: center;
 		display: flex;
 	flex-direction: column;
@@ -336,17 +343,10 @@
 }
 }
 
-.titulo-tua{
-	@extend .titulo-ser;
-	color:$keyColor;
-	background-color:map-get($map:$colores,$key:"tres");
-
-}
 
 .titulo-tuataras{
 	@extend .titulo-ser;
-	color:map-get($map:$colores,$key:"tres") ;
-	background-color:map-get($map:$colores,$key:"uno");
+	background:linear-gradient(to bottom,#F5F0F0,#A80000FF);
 
 }
 
@@ -365,7 +365,7 @@
 
 .btn-more{
 	@extend .btn-mas;
-	background-color:map-get($map:$colores,$key:"seis");
+	background-color:map-get($map:$colores,$key:"uno");
 	color:map-get($map:$colores,$key:"dos");
 }
 
@@ -408,4 +408,5 @@
   margin-top: 30px;
   margin-left: 10px;
   margin-bottom: 30px; 
+  margin-right: 10px;
 }
