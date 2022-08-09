@@ -153,7 +153,7 @@
 	color: map-get($map:$colores,$key:"uno");
 	background-color:map-get($map:$colores, $key:"cuatro");
 	margin-top: 15px;
-	@media (max-width: 1024px){
+	@media (max-width: 1100px){
 		font-size: $textMd;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -173,7 +173,7 @@
 	font-size: $textSm;
 	font-family: $mainFont;
 	font-weight: $light;
-	@media (max-width: 1024px){
+	@media (max-width: 1100px){
 		font-size: $textSm;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -188,7 +188,7 @@
 .contenedor-b{
 	@extend .contenedor-a;
 	flex-direction: row;
-		@media (max-width: 1024px){
+		@media (max-width: 1100px){
 		font-size: $textSm;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -203,7 +203,7 @@
 
 .texto-a{
 	@include texto($light,1.4em,$secondaryColor);
-		@media (max-width: 1024px){
+		@media (max-width: 1100px){
 		font-size: $textSm;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -218,7 +218,7 @@
 
 .texto-espe{
 	@include flex-column();
-	@media (max-width: 1024px){
+	@media (max-width: 1100px){
 		font-size: $textSm;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -232,7 +232,7 @@
 
 .texto-ima{
 	width: 40vw;
-	@media (max-width: 1024px){
+	@media (max-width: 1100px){
 		width: 90vw;
 		font-size: $textSm;
 		font-family: $mainFont;
@@ -249,7 +249,7 @@
 
 .texto-image{
 	@extend .texto-ima;
-	@media (max-width: 1024px){
+	@media (max-width: 1100px){
 		font-size: $textSm;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -271,7 +271,7 @@
 	font-weight: $regular;
 	color: map-get($map:$colores, $key:"uno");
 	background-color: map-get($map:$colores,$key:"tres");
-	@media (max-width:1024px){
+	@media (max-width:1100px){
 		font-size: $textMdl;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -287,7 +287,7 @@
 .suvs{
 	@extend .resaltado;
 	background-color:map-get($map:$colores,$key:"cinco");
-	@media (max-width: 1024px){
+	@media (max-width: 1100px){
 		font-size: $textSm;
 		font-family: $mainFont;
 		font-weight: $light;
@@ -306,7 +306,7 @@
 	color: map-get($map:$colores, $key:"uno");
 	margin-top: 10px;
 	margin-bottom: 10px;
-	@media (max-width: 1024px){
+	@media (max-width: 1100px){
 		font-size: $textMd;
 		font-family: $mainFont;
 		font-weight: $bold;
@@ -410,3 +410,141 @@
   margin-bottom: 30px; 
   margin-right: 10px;
 }
+
+.botones{
+	font-family: $mainFont;
+	font-size: $textMd;
+	font-weight: $bold;
+	font-style: italic;
+	background-color:map-get($map:$colores,$key:"uno");
+	color:map-get($map:$colores,$key:"dos");
+	border-radius: 10px 15px;
+	margin-bottom: 8px;
+}
+
+
+/*-------------- ERROR 404 -------------- */
+
+.error{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+	@media (max-width: 768px){
+		font-size: $textMd;
+		font-family: $mainFont;
+		font-weight: $bold;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+}
+
+.pagina-error{
+	font-family: $secondaryFont;
+		font-size: $textXl;
+		font-weight: $bold;
+		color:map-get($map:$colores,$key:"uno") ;
+		margin-top: 10px;
+		@media (max-width: 768px){
+		font-size: $textMd;
+		font-family: $mainFont;
+		font-weight: $bold;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+.not-found{
+	@extend .pagina-error;
+	font-family: $mainFont;
+	font-size: $textXxl;
+	margin-bottom: 15px;
+	margin-bottom: 5px;
+	@media (max-width: 768px){
+		margin-top: 15px;
+		font-size: $textXl;
+		font-family: $mainFont;
+		font-weight: $bold;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+}
+
+.imagen-error{
+	margin-top: 5px;
+	border-radius:15px;
+	margin-bottom: 15px;
+	margin-bottom: 15px;
+	@media (max-width: 768px){
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+}
+}
+
+.recalcular{
+	font-family: $secondaryFont;
+		font-size: $textXl;
+		font-weight: $bold;
+		font-style: italic;
+		color:map-get($map:$colores,$key:"uno") ;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 12px;
+		@media (max-width: 768px){
+		font-size: $textMd;
+		font-family: $mainFont;
+		font-weight: $bold;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+}
+
+.boton{
+	font-family: $mainFont;
+	font-size: $textMdl;
+	font-weight: $bold;
+	color:map-get($map:$colores,$key:"dos");
+	margin-top: 5px;
+	padding:5px 15px;
+	border-radius:10px;
+	border:none;
+	background:map-get($map:$colores,$key:"uno");
+	display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 12px;
+		@media (max-width: 768px){
+		font-size: $textSm;
+		font-family: $mainFont;
+		font-weight: $bold;
+		text-align: center;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+}
+
