@@ -18,7 +18,7 @@ nav{
 					font-size:$textMd;
 					a{
 						&:hover{
-							color: map-get($map:$colores, $key:"tres");
+							color: map-get($map:$colores, $key:"uno");
 					}
 				}
 			}
@@ -28,7 +28,7 @@ nav{
 }
 .banner {
     background:linear-gradient(to bottom,whitesmoke,grey,black);
-    color: $secondaryColor;
+    color: map-get($map:$colores, $key:"uno");
     padding-bottom: auto;
 }
 
