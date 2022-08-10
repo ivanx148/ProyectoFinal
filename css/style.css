@@ -105,8 +105,9 @@ h2 a {
   width: 5vw; }
   @media (max-width: 1100px) {
     .pegassi {
-      margin-left: 158px;
-      width: 14vw; } }
+      width: 14vw;
+      margin: auto;
+      padding: auto; } }
 
 .text-titulo {
   text-align: center;
