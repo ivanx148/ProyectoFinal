@@ -1,46 +1,48 @@
-nav{
+
+.banner {
 	font-family: $mainFont;
 	font-size: $textMd;
 	font-weight: $bold;
-	
-	a{
-		margin: 0px 110px;
-			list-style: none;
-			text-decoration: none;
-			ul{
-				display: inline-block;
-				li{
-					list-style: none;
-					display: inline-block;
-					margin:10px 6px;
-					font-family: $mainFont;
-					color: $secondaryColor;
-					font-size:$textMd;
-					a{
-						&:hover{
-							color: map-get($map:$colores, $key:"uno");
-					}
-				}
-			}
+	list-style: none;
+	text-decoration: none;
+    @media (max-width: 1100px){
+    font-family: $mainFont;
+	font-size: $textSm;
+	font-weight: $bold;
 
-		}
 	}
+	}
+   
+.bg-degrade{
+	background:linear-gradient(to bottom,whitesmoke,grey,black);
 }
-.banner {
-    background:linear-gradient(to bottom,whitesmoke,grey,black);
-    color: map-get($map:$colores, $key:"uno");
-    padding-bottom: auto;
+
+.space{
+	margin-left: 110px;
+	margin-right: auto;
+	@media (max-width: 1100px){
+    margin-left: auto;
+    margin-right: auto;
+
+}
+}
+
+.spaces{
+	margin-left: 190px;
+	@media (max-width: 1100px){
+    margin-left: auto;
+    margin-right: auto;
+
+}
 }
 
 .pegassi{
-	margin-left: 10px;
+	margin-left: 100px;
 	width: 5vw;
 	@media (max-width: 1100px){
-	display: flex;
-	justify-content:flex-start;
+	margin-left: 160px;
 	width: 14vw;
 
-	
 }
 }
 
