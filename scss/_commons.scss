@@ -261,7 +261,7 @@
 	@extend .resaltado;
 	background-color:map-get($map:$colores,$key:"cinco");
 	@media (max-width: 1343px){
-		font-size: $textSm;
+		font-size: $textMdl;
 		font-family: $mainFont;
 		font-weight: $light;
 
